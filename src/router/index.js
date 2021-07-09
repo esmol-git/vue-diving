@@ -8,12 +8,34 @@ const routes = [
 	{
 		path: "/",
 		name: "Home",
-		component: Home,
+		component: () => import('@/views/Home.vue'),
+		meta: {
+      layout: 'AppLayoutDefault'
+    }
 	},
 	{
 		path: "/about",
 		name: "About",
-		component: () => import("../views/About.vue"),
+		component: () => import("@/views/About.vue"),
+		meta: {
+			layout: 'AppLayoutDefault'
+    }
+	},
+	{
+		path: "/contacts",
+		name: "Contact",
+		component: () => import("@/views/Contact.vue"),
+		meta: {
+			layout: 'AppLayoutSidebar'
+    }
+	},
+	{
+		path: "/auth",
+		name: "Auth",
+		component: () => import("@/views/Auth.vue"),
+		meta: {
+			layout: 'AppLayoutAuth'
+    }
 	},
 ];
 

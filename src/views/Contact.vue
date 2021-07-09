@@ -1,12 +1,12 @@
 <template>
-  <v-app class="about">
-    <h1>This is an about page</h1>
+  <v-app class="contact">
+    <h1>This is an contact page</h1>
   </v-app>
 </template>
 
 <script>
 export default {
-  name: "About",
+  name: "Contact",
   components: {},
 	  data: () => ({ }),
 };
