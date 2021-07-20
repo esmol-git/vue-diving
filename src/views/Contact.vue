@@ -1,13 +1,13 @@
 <template>
-  <v-app class="contact">
-    <h1>This is an contact page</h1>
-  </v-app>
+    <div>
+        <h1>Contact page</h1>
+    </div>
 </template>
 
 <script>
 export default {
-  name: "Contact",
-  components: {},
-	  data: () => ({ }),
-};
+    name: 'Contact',
+    components: {},
+    data: () => ({}),
+}
 </script>

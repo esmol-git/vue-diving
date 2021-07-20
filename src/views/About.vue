@@ -1,13 +1,16 @@
 <template>
-  <v-app class="about">
-    <h1>This is an about page</h1>
-  </v-app>
+    <div>
+        <h1>About page</h1>
+    </div>
 </template>
 
 <script>
 export default {
-  name: "About",
-  components: {},
-	  data: () => ({ }),
-};
+    name: 'About',
+    components: {},
+    data: () => ({}),
+}
 </script>
+
+<style lang="scss">
+</style>

@@ -1,0 +1,52 @@
+.navbar {
+    padding: 15px 0;
+    box-shadow: $box-shadow-navbar;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.menu {
+    display: flex;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        position: relative;
+        color: $light-color;
+        padding: 5px 0;
+        transition: 0.3s ease;
+        margin: 0 10px;
+        cursor: pointer;
+        &:hover {
+            color: $purple-color;
+        }
+        &:hover::after {
+            width: 100%;
+            opacity: 1;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: $purple-color;
+            opacity: 0;
+            transition: 0.3s ease;
+        }
+        i {
+            margin-right: 5px;
+        }
+        &.active {
+            color: $purple-color;
+        }
+        &.active::after {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+}

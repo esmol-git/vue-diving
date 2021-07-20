@@ -9,22 +9,24 @@ export default new Vuex.Store({
 		posts: [],
 	},
 	actions: {
-		async getPosts({commit} ) {
+		async getPosts({ commit }) {
 			let data = await api.posts()
 			console.log(data);
-			
+
 			commit("SET_POSTS_TO_VUEX", data);
+		},
 	},
-},
 	mutations: {
 		SET_POSTS_TO_VUEX: (state, posts) => {
 			state.posts = posts;
 		},
 	},
+
 	getters: {
 		POSTS(state) {
 			return state.posts;
 		},
 	},
+
 	modules: {},
 });
