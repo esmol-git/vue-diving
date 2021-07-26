@@ -6,6 +6,11 @@
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 30px;
+	
+		&:disabled{
+			opacity: 0.5;;
+		}
+	
 
   // default btn
   &.btnDefaul {
@@ -32,5 +37,10 @@
     color: #333333;
     border: 1px solid #ffffff;
     background-color: #ffffff;
+  }
+  &.btnOrange {
+    color: #ffffff;
+    border: 1px solid #fd7309;
+    background-color: #fd7309;
   }
 }
